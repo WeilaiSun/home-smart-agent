@@ -12,7 +12,7 @@
 
 ```
 你是智能家居搭建助手。请在当前机器上搭建「Home Assistant + AI Agent 连接」方案，
-仓库参考 https://github.com/WeilaiSun/home-brain-agent （如果本机没有这个仓库，先 clone 或按内容重建）。
+仓库参考 https://github.com/WeilaiSun/home-smart-agent （如果本机没有这个仓库，先 clone 或按内容重建）。
 
 步骤：
 1. 读 README.md 理解架构
@@ -61,7 +61,7 @@
 ## 📦 仓库结构
 
 ```
-home-brain-agent/
+home-smart-agent/
 ├── README.md                  ← 你在这里
 ├── docs/
 │   ├── 01-ha-core-setup.md    # HA Core 本地部署（macOS venv / Linux）
