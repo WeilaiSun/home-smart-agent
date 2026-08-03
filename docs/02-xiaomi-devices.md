@@ -20,9 +20,10 @@ cd /tmp/xiaomi-token-extractor
 python3 -m venv venv && venv/bin/pip install -r requirements.txt
 # 交互式运行（PTY 终端）：
 venv/bin/python token_extractor.py --host 127.0.0.1
-# 输入 q → 浏览器打开 http://127.0.0.1:31415 出二维码 → 米家 app 扫码授权
-# 输入 cn（中国服务器）→ 输出账号下所有设备的 token
+# 输入 q → 浏览器打开 http://127.0.0.1:31415 出二维码
 ```
+
+> ⚠️ **扫码需要人工**：二维码出现后，**必须让用户用手机米家 app 扫一下**（这一步 Agent 无法代替）。扫码授权后，终端输入 `cn`（中国服务器），输出账号下所有设备的 token。
 
 输出示例（保存到 `~/homeassistant/config/xiaomi-tokens.json`）：
 ```json
