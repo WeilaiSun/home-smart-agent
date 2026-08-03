@@ -17,6 +17,9 @@ AUTH="Authorization: Bearer $HA_TOKEN"
 
 [ -z "$HA_TOKEN" ] && { echo "ERROR: 无 HA token（请配置 ~/homeassistant/ha-llt.txt 或 HA_TOKEN）"; exit 1; }
 
+# 连通性检查（优雅失败：HA 未运行 / token 无效）
+curl -sf -m 5 -o /dev/null "$HA_URL/api/" -H "$AUTH" || { echo "ERROR: HA unreachable or token invalid: $HA_URL"; exit 1; }
+
 case "$1" in
   states)
     curl -s --max-time 15 -H "$AUTH" "$HA_URL/api/states" | python3 -c "
