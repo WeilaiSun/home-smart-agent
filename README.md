@@ -1,4 +1,4 @@
-# 🧠 Home Brain Agent — 让家居设备拥有大脑
+# 🧠 Home Smart Agent — 让家居设备拥有大脑
 
 > 把 Home Assistant 变成 AI Agent 的"身体"，让 Agent 拥有眼睛（摄像头）、耳朵（麦克风）、手脚（智能设备），与真实物理世界联结和互动。家居设备从此有了大脑和记忆。
 
