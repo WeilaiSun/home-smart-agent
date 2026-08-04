@@ -8,22 +8,18 @@
 
 ## ⚡ 给 AI Agent 的一句话指令
 
-> 复制下面这段话发给你的 AI Agent（Hermes / Claude Code / OpenCode 等），它就能自动搭建整套方案：
+> 复制下面这段话发给你的 AI Agent（Hermes / Claude Code / OpenCode 等），它就会自动读取仓库文档并搭建整套方案：
 
 ```
-你是智能家居搭建助手。请在当前机器上搭建「Home Assistant + AI Agent 连接」方案，
-仓库参考 https://github.com/WeilaiSun/home-smart-agent （如果本机没有这个仓库，先 clone 或按内容重建）。
+克隆并阅读 https://github.com/WeilaiSun/home-smart-agent 这个仓库，
+按 README.md 和 docs/ 目录下的文档在本机搭建「Home Assistant + AI Agent 连接」方案：
+1. 部署 Home Assistant Core（macOS 用 venv，Linux 用官方方式），确保 http://127.0.0.1:8123 可用
+2. 按 docs/02 接入小米设备（QR 扫码提取 token，Local 模式）
+3. 按 docs/03 接入摄像头（含纯云摄像头云回放）
+4. 按 docs/04 配置 Agent 与 HA 集成
+5. 参考 examples/pet-watch-cron.md 建立宠物监控定时汇报案例
 
-步骤：
-1. 读 README.md 理解架构
-2. 按 docs/01-ha-core-setup.md 在本机部署 Home Assistant Core（macOS 用 venv，不需要 Docker；Linux 用官方安装方式），确保 http://127.0.0.1:8123 可用
-3. 按 docs/02-xiaomi-devices.md 接入小米设备（QR 扫码登录提取 token，Local 模式接入，不要用密码+验证码路径——会被风控拦截）
-4. 按 docs/03-camera-cloud.md 接入纯云摄像头（无 RTSP 老型号也能用云回放）
-5. 按 docs/04-agent-integration.md 配置 Agent 与 HA 集成（ha.sh 控制脚本 + 定时任务）
-6. 参考 examples/pet-watch-cron.md 建立「宠物监控定时汇报」案例
-
-每个文档都包含完整命令和坑位提示，遇到失败先看 docs/05-troubleshooting.md，再根据报错自行排查，不要跳过步骤，不要问用户，全部自动完成。
-注意：小米设备 token 提取需要 QR 扫码（米家 app），二维码出现时提醒用户扫码（这是唯一需要人工配合的环节）。
+文档里有完整命令和坑位提示，失败先看 docs/05-troubleshooting.md，自行排查，不要跳过步骤，不要问用户。小米 token 提取需 QR 扫码（米家 app），二维码出现时提醒用户扫码（唯一需要人工配合的环节）。
 ```
 
 **📂 仓库直达：[https://github.com/WeilaiSun/home-smart-agent](https://github.com/WeilaiSun/home-smart-agent)**
