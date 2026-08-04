@@ -26,6 +26,10 @@
 注意：小米设备 token 提取需要 QR 扫码（米家 app），二维码出现时提醒用户扫码（这是唯一需要人工配合的环节）。
 ```
 
+**📂 仓库直达：[https://github.com/WeilaiSun/home-smart-agent](https://github.com/WeilaiSun/home-smart-agent)**
+
+> 💡 想先了解再动手？[点这里浏览仓库](https://github.com/WeilaiSun/home-smart-agent) 查看完整文档和案例；想让 Agent 自动搭建，把上面代码块里的指令整段复制给它即可。
+
 ---
 
 ## 🏗️ 架构
